@@ -1,7 +1,4 @@
 import React from "react";
-import { BsInstagram } from "react-icons/bs";
-import {ImFacebook2, ImTwitter} from 'react-icons/im'
-import {IoLogoYoutube} from "react-icons/io"
 
 const Footer = () => {
   return (
