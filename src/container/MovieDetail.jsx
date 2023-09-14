@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Logo from "../assets/Logo.png";
-import { BsFillPlayCircleFill, BsSearch } from "react-icons/bs";
+import { BsFillPlayCircleFill } from "react-icons/bs";
 
 import Swal from "sweetalert2";
 
@@ -55,9 +55,9 @@ const MovieDetail = () => {
                 aria-label="Global"
               >
                 <div className="flex lg:w-full md:w-full w-[115px]">
-                  <a href="#" className="-m-1.5 p-1.5">
+                  <div className="-m-1.5 p-1.5">
                     <img src={Logo} alt="octaedro" />
-                  </a>
+                  </div>
                 </div>
               </nav>
             </header>

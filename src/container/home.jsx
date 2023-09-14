@@ -34,7 +34,7 @@ const Home = () => {
   })
   useEffect(() => {
     fetchMovies();
-
+    //eslint-disable-next-line
   }, []);
 
   return (

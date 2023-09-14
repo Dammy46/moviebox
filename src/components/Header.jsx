@@ -14,9 +14,9 @@ const Header = ({handleChange}) => {
             aria-label="Global"
           >
             <div className="flex lg:w-full md:w-full w-[115px]">
-              <a href="#" className="-m-1.5 p-1.5">
+              <div className="-m-1.5 p-1.5">
                 <img src={Logo} alt="octaedro" />
-              </a>
+              </div>
             </div>
 
             <div className="flex w-[200px] gap-x-12 lg:w-full md:w-full ">
@@ -51,10 +51,10 @@ const Header = ({handleChange}) => {
                 better with MovieBox.
               </p>
               <div>
-                <a href="#list" className="inline-flex items-center text-white capitalize bg-[#BE123C] py-[12px] px-8 rounded-md gap-4 font-semibold">
+                <button className="inline-flex items-center text-white capitalize bg-[#BE123C] py-[12px] px-8 rounded-md gap-4 font-semibold">
                   <BsFillPlayCircleFill />
                   get started
-                </a>
+                </button>
               </div>
             </div>
           </div>
