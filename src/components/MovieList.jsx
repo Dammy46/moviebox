@@ -18,7 +18,7 @@ const MovieList = ({ moviesList, loadingList }) => {
             <h2 className="mt-10"> Loading.....</h2>
           </div>
         ): (
-          <div className="flex flex-wrap lg:justify-evenly md:justify-evenly justify-center gap-7 items-center">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center items-center gap-4">
             {firstTenItems?.map((item, index) => (
               <MovieCard item={item} key={index} />
             ))}
