@@ -11,7 +11,7 @@ const Home = () => {
     try {
       setLoadingList(true);
       const res = await axios.get(
-        `https://api.themoviedb.org/3/discover/movie?api_key=65423a090a9540d660ce4b48e926f7d5`
+        `https://api.themoviedb.org/3/movie/top_rated?api_key=65423a090a9540d660ce4b48e926f7d5`
       );
 
       setMoviesList([...moviesList, res.data.results]);
@@ -25,6 +25,7 @@ const Home = () => {
       })
     }
   };
+
   const handleChange = (event) => {
     setSearch(event.target.value)
   }
@@ -34,6 +35,7 @@ const Home = () => {
   })
   useEffect(() => {
     fetchMovies();
+
     //eslint-disable-next-line
   }, []);
 
@@ -41,7 +43,7 @@ const Home = () => {
     <>
     
       <Header  handleChange={handleChange}/>
-        <MovieList moviesList={filterMovie} loadingList={loadingList}/>
+        <MovieList moviesList={filterMovie} loadingList={loadingList}  handleChange={handleChange}/>
 
         <Footer />
   

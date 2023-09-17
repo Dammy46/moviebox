@@ -51,10 +51,10 @@ const Header = ({handleChange}) => {
                 better with MovieBox.
               </p>
               <div>
-                <button className="inline-flex items-center text-white capitalize bg-[#BE123C] py-[12px] px-8 rounded-md gap-4 font-semibold">
+                <a href="#list" className="inline-flex items-center text-white capitalize bg-[#BE123C] py-[12px] px-8 rounded-md gap-4 font-semibold">
                   <BsFillPlayCircleFill />
                   get started
-                </button>
+                </a>
               </div>
             </div>
           </div>
